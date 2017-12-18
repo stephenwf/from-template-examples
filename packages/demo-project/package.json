@@ -10,6 +10,7 @@
     "react-component": "from-template from-template-react-component",
     "example-choice": "from-template from-template-example-choice",
     "local-test": "from-template local-test",
-    "local-json-test": "from-template local-json-test"
+    "local-json-test": "from-template local-json-test",
+    "from-template": "from-template"
   }
 }
