@@ -1,0 +1,20 @@
+{
+  "name": {
+    "$input": {
+      "message": "What is the name of the component?"
+    }
+  },
+  "type": {
+    "$choice": {
+      "message": "What is its type?",
+      "choices": ["choiceA", "choiceB"]
+    }
+  },
+  "isSomething": {
+    "$bool": {
+      "message": "A simple yes or no:",
+      "$true": "Its true!",
+      "$false": "Its false!"
+    }
+  }
+}

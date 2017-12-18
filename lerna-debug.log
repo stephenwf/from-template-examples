@@ -1,0 +1,106 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ], args: [] }
+2 verbose rootPath /Users/stephen.fraser/github.com/stephenwf/from-template-demos
+3 info version 2.4.0
+4 silly existsSync /Users/stephen.fraser/github.com/stephenwf/from-template-demos/VERSION
+5 silly initialize attempt
+6 silly npmConfig { registry: undefined,
+6 silly npmConfig   npmClient: undefined,
+6 silly npmConfig   npmClientArgs: undefined,
+6 silly npmConfig   mutex: undefined }
+7 silly initialize success
+8 silly execute attempt
+9 info Bootstrapping 3 packages
+10 info lifecycle preinstall
+11 silly runScript preinstall from-template-example-choice
+12 silly from-template-example-choice
+13 silly runScript preinstall from-template-react-component
+14 silly from-template-react-component
+15 silly runScript preinstall from-template-demo-project
+16 silly from-template-demo-project
+17 silly hasMatchingDependency from-template-demo-project from-template-react-component
+18 silly hasMatchingDependency from-template-demo-project from-template-example-choice
+19 silly hasDependencyInstalled from-template-demo-project from-template
+20 silly dependencyIsSatisfied [ 'from-template',
+20 silly dependencyIsSatisfied   '*',
+20 silly dependencyIsSatisfied   '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/demo-project/node_modules' ]
+21 verbose dependencyIsSatisfied from-template true
+22 silly hasDependencyInstalled from-template-example-choice from-template
+23 silly dependencyIsSatisfied [ 'from-template',
+23 silly dependencyIsSatisfied   '*',
+23 silly dependencyIsSatisfied   '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/example-choice/node_modules' ]
+24 verbose dependencyIsSatisfied from-template false
+25 silly hasDependencyInstalled from-template-react-component from-template
+26 silly dependencyIsSatisfied [ 'from-template',
+26 silly dependencyIsSatisfied   '*',
+26 silly dependencyIsSatisfied   '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/react-component/node_modules' ]
+27 verbose dependencyIsSatisfied from-template false
+28 silly hasDependencyInstalled from-template-demo-project optimist
+29 silly dependencyIsSatisfied [ 'optimist',
+29 silly dependencyIsSatisfied   '^0.6.1',
+29 silly dependencyIsSatisfied   '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/demo-project/node_modules' ]
+30 verbose dependencyIsSatisfied optimist true
+31 silly root dependencies []
+32 silly leaf dependencies {
+32 silly leaf dependencies   "from-template-demo-project": [
+32 silly leaf dependencies     {
+32 silly leaf dependencies       "dependency": "from-template@*",
+32 silly leaf dependencies       "isSatisfied": true
+32 silly leaf dependencies     },
+32 silly leaf dependencies     {
+32 silly leaf dependencies       "dependency": "optimist@^0.6.1",
+32 silly leaf dependencies       "isSatisfied": true
+32 silly leaf dependencies     }
+32 silly leaf dependencies   ],
+32 silly leaf dependencies   "from-template-example-choice": [
+32 silly leaf dependencies     {
+32 silly leaf dependencies       "dependency": "from-template@*",
+32 silly leaf dependencies       "isSatisfied": false
+32 silly leaf dependencies     }
+32 silly leaf dependencies   ],
+32 silly leaf dependencies   "from-template-react-component": [
+32 silly leaf dependencies     {
+32 silly leaf dependencies       "dependency": "from-template@*",
+32 silly leaf dependencies       "isSatisfied": false
+32 silly leaf dependencies     }
+32 silly leaf dependencies   ]
+32 silly leaf dependencies }
+33 info Installing external dependencies
+34 verbose actions 2 actions, concurrency 4
+35 silly installInDir example-choice [ 'from-template@*' ]
+36 silly installInDir backup /Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/example-choice/package.json
+37 silly rename [ '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/example-choice/package.json',
+37 silly rename   '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/example-choice/package.json.lerna_backup' ]
+38 silly installInDir react-component [ 'from-template@*' ]
+39 silly installInDir backup /Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/react-component/package.json
+40 silly rename [ '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/react-component/package.json',
+40 silly rename   '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/react-component/package.json.lerna_backup' ]
+41 silly installInDir writing tempJson { dependencies: { 'from-template': '*' } }
+42 silly installInDir writing tempJson { dependencies: { 'from-template': '*' } }
+43 silly getExecOpts { cwd: '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/react-component' }
+44 silly installInDir [ 'npm', [ 'install' ] ]
+45 silly getExecOpts { cwd: '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/example-choice' }
+46 silly installInDir [ 'npm', [ 'install' ] ]
+47 silly installInDir cleanup /Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/react-component/package.json
+48 silly renameSync [ '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/react-component/package.json.lerna_backup',
+48 silly renameSync   '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/react-component/package.json' ]
+49 verbose installed leaf from-template-react-component
+50 error execute callback with error
+51 error Error: Command failed: npm install
+51 error npm WARN react-component No description
+51 error npm WARN react-component No repository field.
+51 error npm WARN react-component No license field.
+51 error
+51 error npm ERR! path /Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/react-component/node_modules/.staging/from-template-6ff35342/node_modules/abbrev
+51 error npm ERR! code ENOENT
+51 error npm ERR! errno -2
+51 error npm ERR! syscall rename
+51 error npm ERR! enoent ENOENT: no such file or directory, rename '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/react-component/node_modules/.staging/from-template-6ff35342/node_modules/abbrev' -> '/Users/stephen.fraser/github.com/stephenwf/from-template-demos/packages/react-component/node_modules/.staging/abbrev-b66282ab'
+51 error npm ERR! enoent This is related to npm not being able to find a file.
+51 error npm ERR! enoent
+51 error
+51 error npm ERR! A complete log of this run can be found in:
+51 error npm ERR!     /Users/stephen.fraser/.npm/_logs/2017-12-17T23_10_08_056Z-debug.log
+51 error
+51 error     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
+51 error     at <anonymous>
