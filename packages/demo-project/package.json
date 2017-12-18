@@ -1,7 +1,7 @@
 {
   "name": "from-template-demo-project",
   "dependencies": {
-    "from-template": "1.0.5",
+    "from-template": "^1.0.5",
     "from-template-react-component": "1.0.0",
     "from-template-example-choice": "1.0.0",
     "optimist": "^0.6.1"
